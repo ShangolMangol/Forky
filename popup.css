@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    height: 300px;
+    width: 325px;
+}
+
+#top-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin-right: auto; /* Push the title to the left */
+}
+
+#settings-icon,
+#link-icon {
+    cursor: pointer;
+    padding: 3px;
+    background-color: #444;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+#settings-icon:hover,
+#link-icon:hover {
+    background-color: #555;
+}
+
+#events-list {
+    margin: 20px;
+}
+
+.event-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+strong {
+    color: #28a745;
+}
+
+span {
+    color: #6c757d;
+}
+
+p {
+    color: #495057;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+#loading-spinner {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 9999; /* Ensure the spinner is on top of other elements */
+}
+
+.loading-icon {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 0.5s linear infinite; /* Adjust the speed here (e.g., 0.5s for faster) */
+}
+
+.loading-text {
+    color: #3498db;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#setup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* Ensure it's on top of other elements */
+}
+
+#setup-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#setup-button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#setup-button:hover {
+    background-color: #267bbf;
+}

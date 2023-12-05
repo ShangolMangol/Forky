@@ -1,0 +1,75 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #dfdfdf;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 10px;
+    background-color: #efefef;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #1a1a1a;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.instructions {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 14px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: #d72d27; 
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.confirmation-message {
+    color: #128500b1; 
+    font-size: 14px;
+    margin-top: 0px;
+}

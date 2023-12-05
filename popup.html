@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forky Popup</title>
+    <link rel="stylesheet" href="popup.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="top-bar">
+        <div id="title">Forky</div>
+        <button id="settings-icon">⚙️</button>
+        <button id="link-icon">🔗</button>
+    </div>
+
+    <!-- Your popup content goes here -->
+
+    <!-- <button id="fetch-ics">Fetch ICS</button> -->
+
+    <div id="setup-container" class="hidden">
+        <div id="setup-text">Setup your calender</div>
+        <button id="setup-button">Here</button>
+    </div>
+
+    <div id="loading-spinner" class="loading-spinner" role="status">
+        <div class="loading-icon"></div>
+        <div class="loading-text">Loading...</div>
+    </div>
+    
+    <div id="events-list">
+        <!-- Events will be displayed here -->
+    </div>
+    <script src="popup.js"></script>
+
+</body>
+</html>
